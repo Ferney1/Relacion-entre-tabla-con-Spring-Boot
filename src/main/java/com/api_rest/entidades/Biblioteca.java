@@ -46,5 +46,8 @@ public class Biblioteca {
 
     public void setLibros(Set<Libro> libros) {
         this.libros = libros;
+        for (Libro libro : libros) {
+            libro.setBiblioteca(this); // Para indicar el odjeto actual en el que esta
+        }
     }
 }
